@@ -8,12 +8,14 @@ public class pschemes {
 
 	private boolean validate;
 	private List<String> alist=new ArrayList<String>();
-	private int numTries;
+	private int eTries,sTries,bTries;
 	private String Email=null,Shopping=null,Banking=null;
 		public pschemes() {
 			// TODO Auto-generated constructor stub
 			this.setValidate(false);
-			this.setNumTries(0);
+			setbTries(0);
+			seteTries(0);
+			setsTries(0);
 			this.generatePasword();
 			
 		}
@@ -71,12 +73,6 @@ public class pschemes {
 	        public boolean getValidate() {
 				return this.validate;
 			}
-	        public void setNumTries(int a) {
-				this.numTries=a;
-			}
-	        public int getNumTries() {
-				return this.numTries;
-			}
 	        public void setValidate(boolean b) {
 				// TODO Auto-generated method stub
 				this.validate=b;
@@ -105,5 +101,31 @@ public class pschemes {
 			public void setEmail(String email) {
 				Email = email;
 			}
+
+			public int geteTries() {
+				return eTries;
+			}
+
+			public void seteTries(int eTries) {
+				this.eTries = eTries;
+			}
+
+			public int getsTries() {
+				return sTries;
+			}
+
+			public void setsTries(int sTries) {
+				this.sTries = sTries;
+			}
+
+			public int getbTries() {
+				return bTries;
+			}
+
+			public void setbTries(int bTries) {
+				this.bTries = bTries;
+			}
+
+		
 			
 }

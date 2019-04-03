@@ -153,7 +153,7 @@ public class GetTestPasswordGUI extends JFrame {
 	public void addVisibleListener(ActionListener listen) {
 		Pword_Visibility.addActionListener(listen);
 	}
-	void displayErrorMessage(String errorMessage){
+	public void displayErrorMessage(String errorMessage){
 		JOptionPane.showMessageDialog(this, errorMessage);	
 	}
 	public String getPType() {
