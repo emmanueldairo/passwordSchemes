@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 	
 public class pschemes {
-	private static final Logger logger = LogManager.getLogger(passwordschemes.class);
+	private static final Logger logger = LogManager.getLogger(pschemes.class);
 
 	private boolean validate;
 	private List<String> alist=new ArrayList<String>();
