@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 	
 public class pschemes {
+	private static final Logger logger = LogManager.getLogger(passwordschemes.class);
 
 	private boolean validate;
 	private List<String> alist=new ArrayList<String>();
@@ -54,6 +55,7 @@ public class pschemes {
 	            System.out.println("Your banking password is " + alist.get(pwindex2));
 	            this.Banking=alist.get(pwindex2);
 	            return alist.get(pwindex2);
+			
 			}
 	        
 	        public  String shoppingPassword() {
