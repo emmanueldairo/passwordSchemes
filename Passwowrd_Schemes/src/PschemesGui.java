@@ -1,20 +1,19 @@
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.GridBagConstraints;
 import javax.swing.JButton;
 import java.awt.Insets;
 import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
+import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
+
+@SuppressWarnings("serial")
 public class PschemesGui extends JFrame {
 
 	private JPanel contentPane;
@@ -249,5 +248,10 @@ public class PschemesGui extends JFrame {
 	}
 	public void addBanikingNext2Listener(ActionListener listen) {
 		Banking_Next2.addActionListener(listen);
+	}
+	public void displayErrorMessage(String errorMessage) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(this, errorMessage);	
+
 	}
 }
